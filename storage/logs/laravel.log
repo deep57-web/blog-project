@@ -437,3 +437,24 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2025-02-04 09:35:42] local.ERROR: The provided cwd "/Users/deepak/Desktop/deep_laravel/blogproject/public" does not exist. {"exception":"[object] (Symfony\\Component\\Process\\Exception\\RuntimeException(code: 0): The provided cwd \"/Users/deepak/Desktop/deep_laravel/blogproject/public\" does not exist. at /Users/deepak/Desktop/deep_laravel/blogproject/vendor/symfony/process/Process.php:342)
+[stacktrace]
+#0 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php(167): Symfony\\Component\\Process\\Process->start(Object(Closure))
+#1 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php(126): Illuminate\\Foundation\\Console\\ServeCommand->startProcess(true)
+#2 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Foundation/Console/ServeCommand.php(137): Illuminate\\Foundation\\Console\\ServeCommand->handle()
+#3 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\ServeCommand->handle()
+#4 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#5 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#6 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#7 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#8 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate\\Container\\Container->call(Array)
+#9 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#10 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#11 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/symfony/console/Application.php(1094): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/symfony/console/Application.php(342): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ServeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/symfony/console/Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 /Users/deepak/Desktop/deep_laravel/blogproject/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1231): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 /Users/deepak/Desktop/deep_laravel/blogproject/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#17 {main}
+"} 
