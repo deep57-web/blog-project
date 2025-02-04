@@ -9,7 +9,10 @@
         </div>
     @endif
 
-    <a href="{{ route('admin.posts.create') }}">Create New Post</a>
+    <div style="display: flex; gap: 1rem;">
+        <a href="{{ route('admin.posts.create') }}">Create New Post</a>
+        <a href="{{ route('admin.categories.create') }}">Create New Category</a>
+    </div>
 
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
